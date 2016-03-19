@@ -97,8 +97,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="178" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-np-sFe">
-                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="178" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-np-sFe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="89"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrg-hm-XI1">
                                                     <rect key="frame" x="0.0" y="89" width="110" height="21"/>
@@ -200,8 +200,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAv-vE-qBw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Charizard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nid-yg-Hwb">
-                                        <rect key="frame" x="217" y="4" width="177" height="47"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charizard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nid-yg-Hwb">
+                                        <rect key="frame" x="211" y="4" width="177" height="47"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="177" id="553-p4-EPn"/>
                                             <constraint firstAttribute="width" constant="177" id="PSG-JS-FTT"/>
@@ -226,6 +226,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PokemonHollowNormal" family="Pokemon Hollow" pointSize="20"/>
                                         <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="Zz1-aY-FyH" eventType="touchUpInside" id="8so-kf-k7l"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1P-RN-HuN">
                                         <rect key="frame" x="532" y="25" width="60" height="30"/>
@@ -254,7 +257,7 @@
                                     <constraint firstItem="nid-yg-Hwb" firstAttribute="centerX" secondItem="YAv-vE-qBw" secondAttribute="centerX" id="ura-Tk-3dC"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nHT-3F-hKP">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nHT-3F-hKP">
                                 <rect key="frame" x="10" y="63" width="580" height="316"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yQW-6v-gEw">
@@ -280,35 +283,35 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="caa-nT-r4u">
                                                 <rect key="frame" x="120" y="0.0" width="460" height="120"/>
-                                                <mutableString key="text">In March 2000, Morrison Entertainment Group, a small toy developer based at Manhattan Beach, California, sued Nintendo over claims that Pokémon infringed on its own Monster in My Pocket characters. A judge ruled there was no infringement, so Morrison appealed the ruling in November 2001.</mutableString>
+                                                <string key="text">In March 2000, Morrison Entertainment Group, a small toy developer based at Manhattan Beach, California, sued Nintendo over claims that Pokémon infringed on its own Monster in My Pocket characters. A judge ruled there was no infringement, so Morrison appealed the ruling in November 2001.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="49u-Jw-Lar">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="49u-Jw-Lar">
                                         <rect key="frame" x="0.0" y="175" width="580" height="53"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y83-6h-y3F">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y83-6h-y3F">
                                                 <rect key="frame" x="0.0" y="0.0" width="145" height="53"/>
                                                 <fontDescription key="fontDescription" name="PokemonHollowNormal" family="Pokemon Hollow" pointSize="18"/>
                                                 <color key="textColor" red="0.91449815034866333" green="0.42180728912353516" blue="0.29270190000534058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Psychic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phu-hd-xZU">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Psychic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phu-hd-xZU">
                                                 <rect key="frame" x="145" y="0.0" width="145" height="53"/>
                                                 <fontDescription key="fontDescription" name="PokemonHollowNormal" family="Pokemon Hollow" pointSize="18"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vq-fV-R1h">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vq-fV-R1h">
                                                 <rect key="frame" x="290" y="0.0" width="145" height="53"/>
                                                 <fontDescription key="fontDescription" name="PokemonHollowNormal" family="Pokemon Hollow" pointSize="18"/>
                                                 <color key="textColor" red="0.91449815034866333" green="0.42180728912353516" blue="0.29270190000534058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="132" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-nM-04F">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="132" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-nM-04F">
                                                 <rect key="frame" x="435" y="0.0" width="145" height="53"/>
                                                 <fontDescription key="fontDescription" name="PokemonHollowNormal" family="Pokemon Hollow" pointSize="18"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -316,14 +319,14 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <view alpha="0.5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yw9-Ob-Xpe">
+                                    <view alpha="0.5" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yw9-Ob-Xpe">
                                         <rect key="frame" x="0.0" y="243" width="580" height="1"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="oAQ-SI-Xpy"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uNE-Hb-Qqo">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uNE-Hb-Qqo">
                                         <rect key="frame" x="0.0" y="259" width="580" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyP-vo-sPI">
@@ -352,7 +355,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jQD-NU-8Iy">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jQD-NU-8Iy">
                                         <rect key="frame" x="0.0" y="295" width="580" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OB-jz-1gg">
@@ -383,11 +386,11 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HwD-or-taX">
-                                <rect key="frame" x="0.0" y="389" width="600" height="35"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwD-or-taX">
+                                <rect key="frame" x="0.0" y="399" width="600" height="35"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Next Evolution: Venusaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hH-Hc-DsH">
-                                        <rect key="frame" x="125" y="3" width="350" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution: Venusaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hH-Hc-DsH">
+                                        <rect key="frame" x="163" y="3" width="273" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="gQd-E2-Wjd"/>
                                         </constraints>
@@ -406,14 +409,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WEv-Rz-S3C">
                                 <rect key="frame" x="20" y="455" width="560" height="110"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="112" translatesAutoresizingMaskIntoConstraints="NO" id="hIc-Wk-hOV">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="112" translatesAutoresizingMaskIntoConstraints="NO" id="hIc-Wk-hOV">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="AgK-JZ-tee"/>
                                             <constraint firstAttribute="height" constant="110" id="lri-Pg-gfk"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="120" translatesAutoresizingMaskIntoConstraints="NO" id="uvO-8n-I1w">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="120" translatesAutoresizingMaskIntoConstraints="NO" id="uvO-8n-I1w">
                                         <rect key="frame" x="280" y="0.0" width="280" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="aG6-tJ-rtU"/>
@@ -441,7 +444,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseAttackLbl" destination="y10-9X-ZhO" id="v3p-ji-kND"/>
+                        <outlet property="currentEvoImg" destination="hIc-Wk-hOV" id="mnp-Pw-Poz"/>
+                        <outlet property="defenseLbl" destination="bVb-nM-04F" id="5k1-Iq-Uis"/>
+                        <outlet property="descriptionLbl" destination="caa-nT-r4u" id="o2D-g5-uLz"/>
+                        <outlet property="evoLbl" destination="2hH-Hc-DsH" id="7c4-jo-Lkx"/>
+                        <outlet property="heightLbl" destination="PR0-hz-P7B" id="kyN-SR-LLO"/>
+                        <outlet property="mainImg" destination="vM4-9X-aQS" id="pB1-yI-RS0"/>
                         <outlet property="name" destination="nid-yg-Hwb" id="Ca8-vm-Hwo"/>
+                        <outlet property="nextEvoImg" destination="uvO-8n-I1w" id="Cn3-nF-SwW"/>
+                        <outlet property="pokedexLbl" destination="sOd-Q5-pMT" id="doS-lV-rkl"/>
+                        <outlet property="typeLbl" destination="phu-hd-xZU" id="oJc-ik-dKh"/>
+                        <outlet property="weightLbl" destination="XfP-FS-51H" id="rGb-PZ-mKC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znH-CY-XIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
